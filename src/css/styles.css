@@ -149,6 +149,7 @@ main{
     margin-bottom: 4rem;
     width: 100vw;
     overflow: hidden;
+    text-align: center;
 }
 
 .title_cel{
@@ -166,15 +167,15 @@ main{
 .cel_img img{
     height: 50rem;
     position: relative;
-    left: -3rem;
+    left: -5.5rem;
     z-index: 10;
     pointer-events: none;
 }
 .cel_img iframe{
     position: absolute;
     top: 1.4rem;
-    left: 11rem;
-    width: 22.5rem;
+    left: 8.7rem;
+    width: 22.6rem;
     height: 46rem;
 }
 
