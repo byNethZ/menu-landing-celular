@@ -147,6 +147,8 @@ main{
 
 .cel{
     margin-bottom: 4rem;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .title_cel{
