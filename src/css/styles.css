@@ -1,0 +1,199 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: #fbfbfb;
+    overflow-x: hidden
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+h1,h2,h3, h4, p, a{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2{
+    font-weight: 700;
+}
+p{
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+.header{
+    background-image: url(/src/img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60rem;
+    position: relative;
+}
+.header:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(1,48,206,0.8);
+    height: 100%;
+}
+.content_header{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 4rem;
+    text-align: center;
+    color: #fff;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content_header img{
+    width: 50%;
+}
+.content_header h1{
+    margin: 5rem auto 0 auto;
+    font-size: 24px;
+}
+header > img{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 25rem;
+    max-height: 50rem;
+}
+
+
+/* Main */
+/* boton whatsapp */
+
+main{
+    padding-top: 18rem;
+}
+
+.whatsapp a{
+    background: rgb(0,228,165);
+    background: linear-gradient(180deg, rgba(0,228,165,1) 0%, rgba(0,226,135,1) 60%, rgba(102,225,82,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 85%;
+    max-width: 50rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+.whatsapp span{
+    color: #fff;
+    font-size: 16px;
+    width: 75%;
+    margin-left: 1rem;
+    text-align: center;
+    font-weight: 700;
+
+}
+.whatsapp img{
+    height: 5rem;
+}
+
+/* Beneficios */
+
+.beneficios{
+    padding: 3rem 1rem;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.title_beneficios h2{
+    text-align: center;
+    color: #0130CE;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.card_container{
+    padding: 0 1.5rem;
+}
+.card{
+    background-color: #fff;
+    border-radius: 3rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 3rem;
+}
+.card img{
+    height: 8rem;
+}
+.card h3{
+    color: #0130CE;
+    font-size: 2rem;
+}
+
+.cel{
+    margin-bottom: 4rem;
+}
+
+.title_cel{
+    text-align: center;
+    padding: 2rem;
+}
+
+.title_cel h2{
+    color: #0130CE;
+    font-size: 2.5rem;
+}
+.cel_img{
+    position: relative;
+}
+.cel_img img{
+    height: 65rem;
+    position: relative;
+    left: -7rem;
+    z-index: 10;
+    pointer-events: none;
+}
+.cel_img iframe{
+    position: absolute;
+    top: 1.9rem;
+    left: 11rem;
+    width: 29.5rem;
+    height: 59.5rem;
+}
+
+/* Footer */
+footer{
+    padding: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+footer>a>img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.redes img{
+    width: 4rem;
+    margin: 2rem;
+}
