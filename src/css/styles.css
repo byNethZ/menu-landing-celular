@@ -65,7 +65,7 @@ p{
     margin: 5rem auto 0 auto;
     font-size: 24px;
 }
-header > img{
+/* header > img{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -73,8 +73,45 @@ header > img{
     right: 0;
     top: 25rem;
     max-height: 50rem;
-}
+} */
 
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25rem;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100vw;
+    max-width: 75rem;
+}
+@keyframes slide {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
 
 /* Main */
 /* boton whatsapp */
@@ -199,4 +236,7 @@ footer>a>img{
 .redes img{
     width: 4rem;
     margin: 2rem;
+}
+footer p{
+    font-size: 1rem;
 }
