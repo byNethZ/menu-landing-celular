@@ -51,7 +51,7 @@ p{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
     text-align: center;
     color: #fff;
     width: 100vw;
@@ -60,6 +60,7 @@ p{
 }
 .content_header img{
     width: 50%;
+    max-width: 25rem;
 }
 .content_header h1{
     margin: 5rem auto 0 auto;
@@ -87,30 +88,38 @@ p{
 .slider ul{
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 500%;
 
     animation: slide 20s infinite alternate;
 }
 .slider li{
-    width: 100%;
+    width: 100vw;
     list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 .slider img{
-    width: 100vw;
+    width: 23rem;
     max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 @keyframes slide {
     0%{margin-left: 0;}
-    20%{margin-left: 0;}
+    18%{margin-left: 0;}
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
+    20%{margin-left: -100%;}
+    38%{margin-left: -100%;}
     
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
+    40%{margin-left: -200%;}
+    58%{margin-left: -200%;}
 
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+    60%{margin-left: -300%;}
+    78%{margin-left: -300%;}
+
+    80%{margin-left: -400%;}
+    100%{margin-left: -400%;}
 }
 
 /* Main */
@@ -128,7 +137,7 @@ main{
     justify-content: center;
     padding: 1rem;
     width: 85%;
-    max-width: 50rem;
+    max-width: 35rem;
     border-radius: 3rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -166,6 +175,24 @@ main{
 .card_container{
     padding: 0 1.5rem;
 }
+
+@media (min-width: 700px) {
+    .card_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}
+@media (min-width: 1350px) {
+    .flex-media{
+        display: flex;
+    }
+    .card_container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
 .card{
     background-color: #fff;
     border-radius: 3rem;
@@ -198,20 +225,42 @@ main{
     color: #0130CE;
     font-size: 2.5rem;
 }
+.iframe-cel{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.iframe-cel iframe{
+    width: 55rem;
+    height: 55rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: -8rem;
+}
+
+@media (min-width: 700px) {
+    .iframe-cel iframe{
+        margin-left: 0;
+    }
+}
+
+/* Iframe */
 .cel_img{
     position: relative;
 }
-.cel_img img{
+.cel_img .img{
     height: 50rem;
     position: relative;
-    left: -5.5rem;
     z-index: 10;
     pointer-events: none;
 }
-.cel_img iframe{
+.cel_img .iframe{
     position: absolute;
     top: 1.4rem;
-    left: 8.7rem;
+    left: 14.5rem;
     width: 22.6rem;
     height: 46rem;
 }
@@ -224,6 +273,7 @@ footer{
 }
 footer>a>img{
     width: 50%;
+    max-width: 25rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
