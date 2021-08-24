@@ -278,6 +278,15 @@ main{
     width: 22.6rem;
     height: 46rem;
 }
+.parr{
+    text-align: center;
+}
+@media (min-width: 700px) {
+    .parr{
+        font-size: 1.8rem;
+        margin: 4rem auto;
+    }
+}
 
 /* Footer */
 footer{
