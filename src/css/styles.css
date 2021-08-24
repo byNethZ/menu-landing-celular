@@ -66,6 +66,11 @@ p{
     margin: 5rem auto 0 auto;
     font-size: 24px;
 }
+@media (min-width: 1250px) {
+    .content_header h1{
+        font-size: 40px;
+    }
+}
 /* header > img{
     position: absolute;
     margin-left: auto;
@@ -216,6 +221,15 @@ main{
     text-align: center;
 }
 
+@media (min-width: 1250px) {
+    .cel h2{
+        font-size: 3.5rem;
+    }
+    .cel p{
+        font-size: 1.8rem;
+    }
+}
+
 .title_cel{
     text-align: center;
     padding: 2rem;
@@ -260,7 +274,7 @@ main{
 .cel_img .iframe{
     position: absolute;
     top: 1.4rem;
-    left: 14.5rem;
+    left: 14.3rem;
     width: 22.6rem;
     height: 46rem;
 }
